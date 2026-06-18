@@ -7,6 +7,7 @@ namespace Horde\Victim\Test\Unit;
 use Horde\Victim\Author;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\CoversClass;
+use InvalidArgumentException;
 
 #[CoversClass(Author::class)]
 class AuthorTest extends TestCase
@@ -38,7 +39,7 @@ class AuthorTest extends TestCase
 
     public function testConstructorThrowsExceptionForEmptyName(): void
     {
-        $this->expectException(\InvalidArgumentException::class);
+        $this->expectException(InvalidArgumentException::class);
         $this->expectExceptionMessage('Name cannot be empty');
 
         new Author('');

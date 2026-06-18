@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace Horde\Victim;
 
 use Stringable;
+use InvalidArgumentException;
 
 class Author implements Stringable
 {
     public function __construct(public readonly string $name, public string $email = '', public string $homepage = '', public string $role = '')
     {
         if (empty($name)) {
-            throw new \InvalidArgumentException('Name cannot be empty');
+            throw new InvalidArgumentException('Name cannot be empty');
         }
     }
 
