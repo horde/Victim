@@ -11,7 +11,7 @@ class ComposerRootProject implements Stringable
 {
     public readonly DirectoryIterator $projectRoot;
     public function __construct(
-        string|stringable|DirectoryIterator $projectRoot
+        string|Stringable|DirectoryIterator $projectRoot
     ) {
         $this->projectRoot = new DirectoryIterator($projectRoot);
     }
