@@ -1,0 +1,51 @@
+{
+    "name": "horde/victim",
+    "description": "Handle composer.json files and composer directory structures without composer dependency",
+    "type": "library",
+    "homepage": "https://www.horde.org",
+    "license": "LGPL-2.1-only",
+    "authors": [
+        {
+            "name": "Ralf Lang",
+            "email": "ralf.lang@ralf-lang.de",
+            "role": "contributor"
+        }
+    ],
+    "keywords": [
+        "support",
+        "metadata",
+        "composer",
+        "json",
+        "packagist"
+    ],
+    "time": "2026-06-18",
+    "repositories": [],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12",
+        "friendsofphp/php-cs-fixer": "^3",
+        "phpstan/phpstan": "^2"
+    },
+    "suggest": {},
+    "autoload": {
+        "psr-4": {
+            "Horde\\Victim\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Horde\\Victim\\Test\\": "test/",
+            "Horde\\Victim\\Test\\Fixtures\\": "test/fixtures/"
+        }
+    },
+    "config": {
+        "allow-plugins": {}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    }
+}

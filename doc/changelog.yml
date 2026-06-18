@@ -1,0 +1,13 @@
+---
+1.0.0-alpha1:
+  api: 1.0.0-alpha1
+  state:
+    release: alpha
+    api: alpha
+  date: 2026-06-18
+  license:
+    identifier: LGPL-2.1-only
+    uri: http://www.horde.org/licenses/lgpl21
+  notes: |-
+    feat: Bootstrap horde/victim as a Horde\Victim\ rename of horde/composer.
+    chore: Bundle ci-tools/horde-components.phar built from horde/components.
