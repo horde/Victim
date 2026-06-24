@@ -43,4 +43,4 @@ keywords:
 vendor: horde
 quality:
   phpstan:
-    level: 3
+    level: 5
