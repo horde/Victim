@@ -18,10 +18,11 @@
         "json",
         "packagist"
     ],
-    "time": "2026-06-18",
+    "time": "2026-06-25",
     "repositories": [],
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "horde/mapi": "^2 || dev-FRAMEWORK_6_0"
     },
     "require-dev": {
         "phpunit/phpunit": "^12",
@@ -40,12 +41,10 @@
             "Horde\\Victim\\Test\\Fixtures\\": "test/fixtures/"
         }
     },
+    "bin": [
+        "bin/ci-bootstrap.sh"
+    ],
     "config": {
         "allow-plugins": {}
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.x-dev"
-        }
     }
 }

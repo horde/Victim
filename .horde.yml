@@ -10,8 +10,7 @@ description: >-
 list: horde
 type: library
 authors:
-  -
-    name: Ralf Lang
+  - name: Ralf Lang
     user: rlang
     email: ralf.lang@ralf-lang.de
     active: true
@@ -20,7 +19,7 @@ version:
   release: 1.0.0
   api: 1.0.0alpha1
 state:
-  release:
+  release: null
   api: alpha
 license:
   identifier: LGPL-2.1-only
@@ -29,6 +28,8 @@ dependencies:
   uses: readonly-parameters
   required:
     php: ^8.2
+    composer:
+      horde/mapi: ^2 || dev-FRAMEWORK_6_0
   dev:
     composer:
       phpunit/phpunit: ^12
@@ -44,3 +45,79 @@ vendor: horde
 quality:
   phpstan:
     level: 3
+ci-platform:
+  '8.2':
+    - php: ^8.1
+    - ext-bcmath
+    - ext-ctype
+    - ext-dom
+    - ext-filter
+    - ext-hash
+    - ext-iconv
+    - ext-json
+    - ext-libxml
+    - ext-mbstring
+    - ext-phar
+    - ext-tokenizer
+    - ext-xml
+    - ext-xmlwriter
+  '8.3':
+    - php: ^8.1
+    - ext-bcmath
+    - ext-ctype
+    - ext-dom
+    - ext-filter
+    - ext-hash
+    - ext-iconv
+    - ext-json
+    - ext-libxml
+    - ext-mbstring
+    - ext-phar
+    - ext-tokenizer
+    - ext-xml
+    - ext-xmlwriter
+  '8.4':
+    - php: ^8.1
+    - ext-bcmath
+    - ext-ctype
+    - ext-dom
+    - ext-filter
+    - ext-hash
+    - ext-iconv
+    - ext-json
+    - ext-libxml
+    - ext-mbstring
+    - ext-phar
+    - ext-tokenizer
+    - ext-xml
+    - ext-xmlwriter
+  '8.5':
+    - php: ^8.1
+    - ext-bcmath
+    - ext-ctype
+    - ext-dom
+    - ext-filter
+    - ext-hash
+    - ext-iconv
+    - ext-json
+    - ext-libxml
+    - ext-mbstring
+    - ext-phar
+    - ext-tokenizer
+    - ext-xml
+    - ext-xmlwriter
+  '8.6':
+    - php: ^8.1
+    - ext-bcmath
+    - ext-ctype
+    - ext-dom
+    - ext-filter
+    - ext-hash
+    - ext-iconv
+    - ext-json
+    - ext-libxml
+    - ext-mbstring
+    - ext-phar
+    - ext-tokenizer
+    - ext-xml
+    - ext-xmlwriter
