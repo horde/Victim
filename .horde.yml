@@ -10,17 +10,16 @@ description: >-
 list: horde
 type: library
 authors:
-  -
-    name: Ralf Lang
+  - name: Ralf Lang
     user: rlang
     email: ralf.lang@ralf-lang.de
     active: true
     role: contributor
 version:
-  release: 1.0.0
+  release: 1.1.0-alpha
   api: 1.0.0alpha1
 state:
-  release:
+  release: alpha
   api: alpha
 license:
   identifier: LGPL-2.1-only
